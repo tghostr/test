@@ -1,0 +1,28 @@
+﻿<Window x:Class="test_avto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test_avto"
+        mc:Ignorable="d"
+            Title="ООО «ДокторМаг»" Height="500" Width="400" MinHeight="500" MinWidth="400" Background="#FFB7D3F2">
+    <Grid>
+        <WrapPanel Margin="0,50,0,0" HorizontalAlignment="Center" >
+
+            <TextBlock Text="Авторизация" FontSize="30" HorizontalAlignment="Center" />
+        </WrapPanel>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Margin="0 20 0 0">
+
+
+            <TextBlock Text="Логин:"/>
+            <TextBox x:Name="tbLogin" Height="30" Width="200" Margin="0,5,0,10"/>
+            <TextBlock Text="Пароль:"/>
+            <TextBox x:Name="tbPass" Height="30" Width="200" Margin="0,5,0,30"/>
+            <Button x:Name="btAuth" Content="Войти" Height="40" Width="200" Click="btAuth_Click"/>
+            <TextBlock Name="GuestBt" HorizontalAlignment="Center" Margin="0,10,0,0" Text="Войти как гость" MouseLeftButtonDown="RegisterBtn" TextDecorations="Underline"/>
+
+
+
+        </StackPanel>
+    </Grid>
+</Window>
